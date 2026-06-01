@@ -1,0 +1,59 @@
+Review #11
+App: Spotify
+Rating: 1
+Date: 2024-12-23
+Text: Logged me out of all devices randomly. Lost all my playlists that weren't backed up. This is unacceptable for a paid service. Data loss is inexcusable. Going to Apple Music.
+
+Review #12
+App: Spotify
+Rating: 5
+Date: 2024-12-24
+Text: Perfect app, no issues. The new AI recommendations are spot on. I discovered so many new artists. Interface is beautiful and responsive. Keep up the great work!
+
+Review #13
+App: Spotify
+Rating: 2
+Date: 2024-12-26
+Text: The latest update broke dark mode - it keeps switching back to light mode randomly. Also the equalizer settings reset after every session. These are basic features that should just work.
+
+Review #14
+App: Spotify
+Rating: 4
+Date: 2024-12-28
+Text: Good app overall. The search functionality is fast and accurate. Collaborative playlists with friends is a great feature. The only downside is occasional buffering on slower connections.
+
+Review #15
+App: Spotify
+Rating: 1
+Date: 2024-12-29
+Text: They added ads inside the premium tier now! Getting ads for Spotify products while paying $11/month is insulting. This is pure greed. Cancelling my subscription immediately.
+
+Review #16
+App: Spotify
+Rating: 5
+Date: 2024-12-30
+Text: Absolutely love this app. The music quality is excellent. The Wrapped feature at year end is always fun. Smart shuffle actually works well. Five stars without hesitation.
+
+Review #17
+App: Spotify
+Rating: 3
+Date: 2025-01-02
+Text: Decent app but has been getting worse. Memory usage keeps increasing with each update. Customer support is slow to respond. The basic features work fine but premium doesn't feel worth it anymore.
+
+Review #18
+App: Spotify
+Rating: 2
+Date: 2025-01-05
+Text: Constant buffering issues even on WiFi. I pay for premium and expect reliable playback. The app also randomly shuffles even when shuffle is turned off. Bugs everywhere in the latest version.
+
+Review #19
+App: Spotify
+Rating: 5
+Date: 2025-01-08
+Text: The best streaming app period. Great catalog, great UX, great recommendations. The Canvas feature (little video loops behind songs) is a nice touch. Totally satisfied customer.
+
+Review #20
+App: Spotify
+Rating: 4
+Date: 2025-01-10
+Text: Solid app, works great 95% of the time. The group session feature is fun for listening together. Just wish they had a better sleep timer. Overall highly recommended.

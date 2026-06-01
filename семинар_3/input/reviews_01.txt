@@ -1,0 +1,59 @@
+Review #1
+App: Spotify
+Rating: 2
+Date: 2024-11-15
+Text: The app crashes every time I try to open a playlist. I've reinstalled three times and nothing helps. Premium subscriber for 3 years and this is what I get. Customer support took 5 days to respond and just told me to reinstall. Completely useless.
+
+Review #2
+App: Spotify
+Rating: 5
+Date: 2024-11-20
+Text: Best music app out there. Love the Discover Weekly, it always finds something new I enjoy. The UI is clean and intuitive. No complaints at all, works perfectly on my iPhone 15.
+
+Review #3
+App: Spotify
+Rating: 1
+Date: 2024-12-01
+Text: Ads every 30 seconds on free tier is absolutely unbearable. I understand monetization but this is extreme. The app also drains battery like crazy. Considering switching to Apple Music.
+
+Review #4
+App: Spotify
+Rating: 3
+Date: 2024-12-05
+Text: It's okay. The music library is great but the app is slow to load sometimes. The shuffle algorithm seems broken - keeps playing the same 20 songs. Price increase last year was disappointing.
+
+Review #5
+App: Spotify
+Rating: 4
+Date: 2024-12-10
+Text: Generally great app. Offline downloads work well for my commute. Minor bug where the queue resets sometimes but not a dealbreaker. Would be 5 stars if they fixed the queue issue.
+
+Review #6
+App: Spotify
+Rating: 1
+Date: 2024-12-12
+Text: Absolute garbage update. They removed the ability to see lyrics while in car mode. Also the new home screen is confusing and cluttered. Bring back the old design! Downgrading my rating from 4 to 1 because of this terrible UX decision.
+
+Review #7
+App: Spotify
+Rating: 5
+Date: 2024-12-15
+Text: Love it! The podcast integration is seamless. I use it daily for both music and podcasts. The crossfade feature is chef's kiss. Totally worth the premium price.
+
+Review #8
+App: Spotify
+Rating: 2
+Date: 2024-12-18
+Text: App uses 800MB of storage even after clearing cache. That's insane. Also syncing between devices is unreliable - my phone shows different queue than desktop. Fix your sync!
+
+Review #9
+App: Spotify
+Rating: 4
+Date: 2024-12-20
+Text: Really solid music streaming experience. The social features like friend activity are fun. Sound quality on high setting is excellent. Slight issue: the app sometimes doesn't resume after a phone call.
+
+Review #10
+App: Spotify
+Rating: 3
+Date: 2024-12-22
+Text: Mixed feelings. The music selection is unbeatable. But the price went up again and the family plan is getting expensive. The AI DJ feature is cool though. Just wish it was cheaper.

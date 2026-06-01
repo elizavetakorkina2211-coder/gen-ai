@@ -1,0 +1,59 @@
+Review #21
+App: Spotify
+Rating: 1
+Date: 2025-01-12
+Text: App deleted my entire library when I updated. 500+ songs gone. This is data loss and it's completely unacceptable. No response from support in 48 hours. Switching to Tidal.
+
+Review #22
+App: Spotify
+Rating: 3
+Date: 2025-01-14
+Text: The app is fine for basic use. But they keep removing features people love and adding ones nobody asked for. The new UI update makes it harder to find your music. Nostalgia for the old Spotify.
+
+Review #23
+App: Spotify
+Rating: 5
+Date: 2025-01-15
+Text: Still the king of music streaming. Vast library, smart playlists, great social features. The app is stable and fast. Worth every penny of the subscription.
+
+Review #24
+App: Spotify
+Rating: 2
+Date: 2025-01-16
+Text: Terrible battery drain since the last update. My phone loses 20% more battery per day with Spotify running in background. Also the widget on iOS stopped working. Please fix.
+
+Review #25
+App: Spotify
+Rating: 4
+Date: 2025-01-18
+Text: Overall great experience. The daily mixes are accurately personalized. Download quality for offline is excellent. One issue: the app sometimes doesn't stop playing when headphones disconnect.
+
+Review #26
+App: Spotify
+Rating: 1
+Date: 2025-01-20
+Text: Price is now €11.99 and the app quality keeps getting worse. Crashes, bugs, poor support. This used to be my favorite app. Now I dread opening it. Definitely cancelling premium.
+
+Review #27
+App: Spotify
+Rating: 5
+Date: 2025-01-22
+Text: Exceptional app. The HiFi quality (when available) is amazing. The blend playlists with friends are genius. Always discovering new music. Cannot imagine using anything else.
+
+Review #28
+App: Spotify
+Rating: 3
+Date: 2025-01-25
+Text: Middle of the road. Works most of the time. The recommendations got worse after the algorithm change. Too many podcasts pushed in music recommendations. I want music, not podcasts.
+
+Review #29
+App: Spotify
+Rating: 2
+Date: 2025-01-28
+Text: Login issues for two weeks. Every time I open the app it asks me to log in again. Tried everything - reinstall, reset password, contact support. Support suggested reinstalling (again). Not helpful.
+
+Review #30
+App: Spotify
+Rating: 4
+Date: 2025-01-30
+Text: Great music app with minor quirks. The new home feed is actually pretty good once you get used to it. Playlist creation is easy. The 30-day free trial for new users is generous. Would recommend.
