@@ -1,0 +1,33 @@
+{
+  "overall_score": 0.75,
+  "verdicts": [
+    {
+      "action": "Fix data loss bug: Investigate and patch the update process that causes library deletion. Example: user lost 500+ songs after update.",
+      "support": "supported",
+      "evidence": [
+        "Отзыв 21: «App deleted my entire library when I updated. 500+ songs gone. This is data loss»",
+        "Отзыв 11: «Logged me out of all devices randomly. Lost all my playlists that weren't backed»"
+      ],
+      "comment": "Два отзыва подтверждают потерю данных после обновления, один с точным совпадением примера (500+ песен)."
+    },
+    {
+      "action": "Resolve app crashes: Address crashes when opening playlists. Example: user reinstalled three times but still crashes.",
+      "support": "supported",
+      "evidence": [
+        "Отзыв 1: «The app crashes every time I try to open a playlist. I've reinstalled three time»"
+      ],
+      "comment": "Один отзыв точно соответствует примеру (три переустановки, краш при открытии плейлиста)."
+    },
+    {
+      "action": "Remove ads from premium: Ensure no ads are shown to paying subscribers. Example: user reported ads for Spotify products while on premium plan.",
+      "support": "supported",
+      "evidence": [
+        "Отзыв 15: «They added ads inside the premium tier now! Getting ads for Spotify products whi»"
+      ],
+      "comment": "Один отзыв точно соответствует примеру (реклама продуктов Spotify в премиум-тарифе)."
+    }
+  ],
+  "ghost_quotes_found": 0,
+  "summary": "Все три рекомендации подтверждены отзывами. Для первой рекомендации есть два отзыва, для второй и третьей — по одному, но с точным совпадением примеров. Общий балл 0.75 из-за того, что две рекомендации имеют только по одному подтверждению.",
+  "needs_revision": false
+}

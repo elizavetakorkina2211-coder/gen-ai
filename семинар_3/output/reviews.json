@@ -1,0 +1,596 @@
+[
+  {
+    "review_id": "1",
+    "app_name": "Spotify",
+    "rating": 2,
+    "review_date": "2024-11-15",
+    "issues": [
+      {
+        "description": "Приложение вылетает при открытии плейлиста, переустановка не помогает.",
+        "quote": "The app crashes every time I try to open a playlist. I've reinstalled three times and nothing helps.",
+        "sentiment": "negative",
+        "category": "надёжность"
+      },
+      {
+        "description": "Поддержка ответила через 5 дней и предложила бесполезное решение.",
+        "quote": "Customer support took 5 days to respond and just told me to reinstall. Completely useless.",
+        "sentiment": "negative",
+        "category": "поддержка"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": null
+  },
+  {
+    "review_id": "2",
+    "app_name": "Spotify",
+    "rating": 5,
+    "review_date": "2024-11-20",
+    "issues": [
+      {
+        "description": "Лучшее музыкальное приложение, Discover Weekly отлично подбирает музыку.",
+        "quote": "Best music app out there. Love the Discover Weekly, it always finds something new I enjoy.",
+        "sentiment": "positive",
+        "category": "другое"
+      },
+      {
+        "description": "Интерфейс чистый и интуитивный, работает отлично.",
+        "quote": "The UI is clean and intuitive. No complaints at all, works perfectly on my iPhone 15.",
+        "sentiment": "positive",
+        "category": "дизайн"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": null
+  },
+  {
+    "review_id": "3",
+    "app_name": "Spotify",
+    "rating": 1,
+    "review_date": "2024-12-01",
+    "issues": [
+      {
+        "description": "Реклама каждые 30 секунд на бесплатном тарифе — невыносимо.",
+        "quote": "Ads every 30 seconds on free tier is absolutely unbearable.",
+        "sentiment": "negative",
+        "category": "реклама"
+      },
+      {
+        "description": "Приложение сильно расходует заряд батареи.",
+        "quote": "The app also drains battery like crazy.",
+        "sentiment": "negative",
+        "category": "производительность"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": null
+  },
+  {
+    "review_id": "4",
+    "app_name": "Spotify",
+    "rating": 3,
+    "review_date": "2024-12-05",
+    "issues": [
+      {
+        "description": "Приложение иногда медленно загружается.",
+        "quote": "the app is slow to load sometimes",
+        "sentiment": "negative",
+        "category": "производительность"
+      },
+      {
+        "description": "Алгоритм перемешивания воспроизводит одни и те же 20 песен.",
+        "quote": "The shuffle algorithm seems broken - keeps playing the same 20 songs.",
+        "sentiment": "negative",
+        "category": "другое"
+      },
+      {
+        "description": "Повышение цены в прошлом году разочаровало.",
+        "quote": "Price increase last year was disappointing.",
+        "sentiment": "negative",
+        "category": "цена"
+      }
+    ],
+    "overall_sentiment": "mixed",
+    "would_recommend": null
+  },
+  {
+    "review_id": "5",
+    "app_name": "Spotify",
+    "rating": 4,
+    "review_date": "2024-12-10",
+    "issues": [
+      {
+        "description": "Офлайн-загрузки работают хорошо.",
+        "quote": "Offline downloads work well for my commute.",
+        "sentiment": "positive",
+        "category": "другое"
+      },
+      {
+        "description": "Небольшой баг: очередь иногда сбрасывается.",
+        "quote": "Minor bug where the queue resets sometimes but not a dealbreaker.",
+        "sentiment": "negative",
+        "category": "надёжность"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": null
+  },
+  {
+    "review_id": "6",
+    "app_name": "Spotify",
+    "rating": 1,
+    "review_date": "2024-12-12",
+    "issues": [
+      {
+        "description": "Убрали возможность видеть текст песен в автомобильном режиме.",
+        "quote": "They removed the ability to see lyrics while in car mode.",
+        "sentiment": "negative",
+        "category": "дизайн"
+      },
+      {
+        "description": "Новый домашний экран запутанный и загромождённый.",
+        "quote": "the new home screen is confusing and cluttered.",
+        "sentiment": "negative",
+        "category": "дизайн"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": null
+  },
+  {
+    "review_id": "7",
+    "app_name": "Spotify",
+    "rating": 5,
+    "review_date": "2024-12-15",
+    "issues": [
+      {
+        "description": "Интеграция подкастов бесшовная, использую ежедневно.",
+        "quote": "The podcast integration is seamless. I use it daily for both music and podcasts.",
+        "sentiment": "positive",
+        "category": "другое"
+      },
+      {
+        "description": "Функция crossfade отличная, стоит премиум-цены.",
+        "quote": "The crossfade feature is chef's kiss. Totally worth the premium price.",
+        "sentiment": "positive",
+        "category": "другое"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": null
+  },
+  {
+    "review_id": "8",
+    "app_name": "Spotify",
+    "rating": 2,
+    "review_date": "2024-12-18",
+    "issues": [
+      {
+        "description": "Приложение занимает 800 МБ памяти даже после очистки кэша.",
+        "quote": "App uses 800MB of storage even after clearing cache. That's insane.",
+        "sentiment": "negative",
+        "category": "производительность"
+      },
+      {
+        "description": "Синхронизация между устройствами ненадёжна: разная очередь на телефоне и ПК.",
+        "quote": "syncing between devices is unreliable - my phone shows different queue than desktop.",
+        "sentiment": "negative",
+        "category": "надёжность"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": null
+  },
+  {
+    "review_id": "9",
+    "app_name": "Spotify",
+    "rating": 4,
+    "review_date": "2024-12-20",
+    "issues": [
+      {
+        "description": "Социальные функции, такие как активность друзей, интересны.",
+        "quote": "The social features like friend activity are fun.",
+        "sentiment": "positive",
+        "category": "другое"
+      },
+      {
+        "description": "Качество звука на высоких настройках отличное.",
+        "quote": "Sound quality on high setting is excellent.",
+        "sentiment": "positive",
+        "category": "другое"
+      },
+      {
+        "description": "Иногда приложение не возобновляет воспроизведение после звонка.",
+        "quote": "the app sometimes doesn't resume after a phone call.",
+        "sentiment": "negative",
+        "category": "надёжность"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": null
+  },
+  {
+    "review_id": "10",
+    "app_name": "Spotify",
+    "rating": 3,
+    "review_date": "2024-12-22",
+    "issues": [
+      {
+        "description": "Музыкальный выбор непревзойдённый.",
+        "quote": "The music selection is unbeatable.",
+        "sentiment": "positive",
+        "category": "другое"
+      },
+      {
+        "description": "Цена снова выросла, семейный план становится дорогим.",
+        "quote": "the price went up again and the family plan is getting expensive.",
+        "sentiment": "negative",
+        "category": "цена"
+      },
+      {
+        "description": "Функция AI DJ классная.",
+        "quote": "The AI DJ feature is cool though.",
+        "sentiment": "positive",
+        "category": "другое"
+      }
+    ],
+    "overall_sentiment": "mixed",
+    "would_recommend": null
+  },
+  {
+    "review_id": "11",
+    "app_name": "Spotify",
+    "rating": 1,
+    "review_date": "2024-12-23",
+    "issues": [
+      {
+        "description": "Приложение вышло из всех устройств, потеряны плейлисты, что неприемлемо для платного сервиса.",
+        "quote": "Logged me out of all devices randomly. Lost all my playlists that weren't backed up. This is unacceptable for a paid service. Data loss is inexcusable.",
+        "sentiment": "negative",
+        "category": "надёжность"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": false
+  },
+  {
+    "review_id": "12",
+    "app_name": "Spotify",
+    "rating": 5,
+    "review_date": "2024-12-24",
+    "issues": [
+      {
+        "description": "Новые AI-рекомендации отличные, интерфейс красивый и отзывчивый.",
+        "quote": "The new AI recommendations are spot on. I discovered so many new artists. Interface is beautiful and responsive.",
+        "sentiment": "positive",
+        "category": "другое"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": true
+  },
+  {
+    "review_id": "13",
+    "app_name": "Spotify",
+    "rating": 2,
+    "review_date": "2024-12-26",
+    "issues": [
+      {
+        "description": "Последнее обновление сломало тёмную тему — она случайно переключается на светлую.",
+        "quote": "The latest update broke dark mode - it keeps switching back to light mode randomly.",
+        "sentiment": "negative",
+        "category": "дизайн"
+      },
+      {
+        "description": "Настройки эквалайзера сбрасываются после каждой сессии.",
+        "quote": "Also the equalizer settings reset after every session.",
+        "sentiment": "negative",
+        "category": "надёжность"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": null
+  },
+  {
+    "review_id": "14",
+    "app_name": "Spotify",
+    "rating": 4,
+    "review_date": "2024-12-28",
+    "issues": [
+      {
+        "description": "Поиск быстрый и точный, совместные плейлисты с друзьями — отличная функция.",
+        "quote": "The search functionality is fast and accurate. Collaborative playlists with friends is a great feature.",
+        "sentiment": "positive",
+        "category": "другое"
+      },
+      {
+        "description": "Иногда буферизация на медленных соединениях.",
+        "quote": "The only downside is occasional buffering on slower connections.",
+        "sentiment": "negative",
+        "category": "производительность"
+      }
+    ],
+    "overall_sentiment": "mixed",
+    "would_recommend": null
+  },
+  {
+    "review_id": "15",
+    "app_name": "Spotify",
+    "rating": 1,
+    "review_date": "2024-12-29",
+    "issues": [
+      {
+        "description": "В премиум-тарифе появилась реклама продуктов Spotify, что оскорбительно за $11 в месяц.",
+        "quote": "They added ads inside the premium tier now! Getting ads for Spotify products while paying $11/month is insulting.",
+        "sentiment": "negative",
+        "category": "реклама"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": false
+  },
+  {
+    "review_id": "16",
+    "app_name": "Spotify",
+    "rating": 5,
+    "review_date": "2024-12-30",
+    "issues": [
+      {
+        "description": "Отличное качество музыки, функция Wrapped в конце года всегда интересна, Smart shuffle работает хорошо.",
+        "quote": "The music quality is excellent. The Wrapped feature at year end is always fun. Smart shuffle actually works well.",
+        "sentiment": "positive",
+        "category": "другое"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": true
+  },
+  {
+    "review_id": "17",
+    "app_name": "Spotify",
+    "rating": 3,
+    "review_date": "2025-01-02",
+    "issues": [
+      {
+        "description": "Использование памяти увеличивается с каждым обновлением.",
+        "quote": "Memory usage keeps increasing with each update.",
+        "sentiment": "negative",
+        "category": "производительность"
+      },
+      {
+        "description": "Служба поддержки медленно отвечает.",
+        "quote": "Customer support is slow to respond.",
+        "sentiment": "negative",
+        "category": "поддержка"
+      },
+      {
+        "description": "Премиум больше не кажется стоящим.",
+        "quote": "premium doesn't feel worth it anymore.",
+        "sentiment": "negative",
+        "category": "цена"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": null
+  },
+  {
+    "review_id": "18",
+    "app_name": "Spotify",
+    "rating": 2,
+    "review_date": "2025-01-05",
+    "issues": [
+      {
+        "description": "Постоянная буферизация даже на Wi-Fi, хотя пользователь платит за премиум.",
+        "quote": "Constant buffering issues even on WiFi. I pay for premium and expect reliable playback.",
+        "sentiment": "negative",
+        "category": "производительность"
+      },
+      {
+        "description": "Приложение случайно перемешивает треки, даже когда перемешивание выключено.",
+        "quote": "The app also randomly shuffles even when shuffle is turned off.",
+        "sentiment": "negative",
+        "category": "надёжность"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": null
+  },
+  {
+    "review_id": "19",
+    "app_name": "Spotify",
+    "rating": 5,
+    "review_date": "2025-01-08",
+    "issues": [
+      {
+        "description": "Лучший стриминговый сервис: отличный каталог, UX и рекомендации. Функция Canvas — приятное дополнение.",
+        "quote": "The best streaming app period. Great catalog, great UX, great recommendations. The Canvas feature (little video loops behind songs) is a nice touch.",
+        "sentiment": "positive",
+        "category": "другое"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": true
+  },
+  {
+    "review_id": "20",
+    "app_name": "Spotify",
+    "rating": 4,
+    "review_date": "2025-01-10",
+    "issues": [
+      {
+        "description": "Приложение работает отлично в 95% случаев, функция группового прослушивания интересна.",
+        "quote": "Solid app, works great 95% of the time. The group session feature is fun for listening together.",
+        "sentiment": "positive",
+        "category": "другое"
+      },
+      {
+        "description": "Хотелось бы лучший таймер сна.",
+        "quote": "Just wish they had a better sleep timer.",
+        "sentiment": "negative",
+        "category": "дизайн"
+      }
+    ],
+    "overall_sentiment": "mixed",
+    "would_recommend": true
+  },
+  {
+    "review_id": "21",
+    "app_name": "Spotify",
+    "rating": 1,
+    "review_date": "2025-01-12",
+    "issues": [
+      {
+        "description": "Обновление удалило всю библиотеку пользователя, более 500 песен потеряно. Поддержка не отвечает 48 часов.",
+        "quote": "App deleted my entire library when I updated. 500+ songs gone. This is data loss and it's completely unacceptable. No response from support in 48 hours.",
+        "sentiment": "negative",
+        "category": "надёжность"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": false
+  },
+  {
+    "review_id": "22",
+    "app_name": "Spotify",
+    "rating": 3,
+    "review_date": "2025-01-14",
+    "issues": [
+      {
+        "description": "Приложение удаляет любимые функции и добавляет ненужные. Новый интерфейс усложняет поиск музыки.",
+        "quote": "But they keep removing features people love and adding ones nobody asked for. The new UI update makes it harder to find your music.",
+        "sentiment": "negative",
+        "category": "дизайн"
+      }
+    ],
+    "overall_sentiment": "mixed",
+    "would_recommend": null
+  },
+  {
+    "review_id": "23",
+    "app_name": "Spotify",
+    "rating": 5,
+    "review_date": "2025-01-15",
+    "issues": [
+      {
+        "description": "Приложение — король стриминга: огромная библиотека, умные плейлисты, отличные социальные функции, стабильно и быстро.",
+        "quote": "Still the king of music streaming. Vast library, smart playlists, great social features. The app is stable and fast. Worth every penny of the subscription.",
+        "sentiment": "positive",
+        "category": "другое"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": true
+  },
+  {
+    "review_id": "24",
+    "app_name": "Spotify",
+    "rating": 2,
+    "review_date": "2025-01-16",
+    "issues": [
+      {
+        "description": "Последнее обновление вызывает сильный расход батареи, телефон теряет на 20% больше заряда в день. Виджет на iOS перестал работать.",
+        "quote": "Terrible battery drain since the last update. My phone loses 20% more battery per day with Spotify running in background. Also the widget on iOS stopped working.",
+        "sentiment": "negative",
+        "category": "производительность"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": null
+  },
+  {
+    "review_id": "25",
+    "app_name": "Spotify",
+    "rating": 4,
+    "review_date": "2025-01-18",
+    "issues": [
+      {
+        "description": "Иногда приложение не останавливает воспроизведение при отключении наушников.",
+        "quote": "One issue: the app sometimes doesn't stop playing when headphones disconnect.",
+        "sentiment": "negative",
+        "category": "надёжность"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": null
+  },
+  {
+    "review_id": "26",
+    "app_name": "Spotify",
+    "rating": 1,
+    "review_date": "2025-01-20",
+    "issues": [
+      {
+        "description": "Цена выросла до €11.99, а качество приложения ухудшается: вылеты, баги, плохая поддержка. Пользователь отменяет подписку.",
+        "quote": "Price is now €11.99 and the app quality keeps getting worse. Crashes, bugs, poor support. This used to be my favorite app. Now I dread opening it. Definitely cancelling premium.",
+        "sentiment": "negative",
+        "category": "цена"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": false
+  },
+  {
+    "review_id": "27",
+    "app_name": "Spotify",
+    "rating": 5,
+    "review_date": "2025-01-22",
+    "issues": [
+      {
+        "description": "Исключительное приложение: отличное качество HiFi, гениальные плейлисты Blend, постоянное открытие новой музыки.",
+        "quote": "Exceptional app. The HiFi quality (when available) is amazing. The blend playlists with friends are genius. Always discovering new music. Cannot imagine using anything else.",
+        "sentiment": "positive",
+        "category": "другое"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": true
+  },
+  {
+    "review_id": "28",
+    "app_name": "Spotify",
+    "rating": 3,
+    "review_date": "2025-01-25",
+    "issues": [
+      {
+        "description": "Рекомендации ухудшились после изменения алгоритма, слишком много подкастов в музыкальных рекомендациях.",
+        "quote": "The recommendations got worse after the algorithm change. Too many podcasts pushed in music recommendations. I want music, not podcasts.",
+        "sentiment": "negative",
+        "category": "другое"
+      }
+    ],
+    "overall_sentiment": "mixed",
+    "would_recommend": null
+  },
+  {
+    "review_id": "29",
+    "app_name": "Spotify",
+    "rating": 2,
+    "review_date": "2025-01-28",
+    "issues": [
+      {
+        "description": "Проблемы со входом в течение двух недель: приложение постоянно просит войти заново. Поддержка не помогает.",
+        "quote": "Login issues for two weeks. Every time I open the app it asks me to log in again. Tried everything - reinstall, reset password, contact support. Support suggested reinstalling (again). Not helpful.",
+        "sentiment": "negative",
+        "category": "поддержка"
+      }
+    ],
+    "overall_sentiment": "negative",
+    "would_recommend": null
+  },
+  {
+    "review_id": "30",
+    "app_name": "Spotify",
+    "rating": 4,
+    "review_date": "2025-01-30",
+    "issues": [
+      {
+        "description": "Отличное музыкальное приложение с мелкими недочетами. Новая домашняя лента хороша после привыкания, создание плейлистов простое.",
+        "quote": "Great music app with minor quirks. The new home feed is actually pretty good once you get used to it. Playlist creation is easy. The 30-day free trial for new users is generous.",
+        "sentiment": "positive",
+        "category": "другое"
+      }
+    ],
+    "overall_sentiment": "positive",
+    "would_recommend": true
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "total_reviews": 30,
+  "avg_rating": 3.07,
+  "top_positive_themes": [
+    "Good music selection and recommendations",
+    "User-friendly interface",
+    "Offline playback feature"
+  ],
+  "top_negative_themes": [
+    "App crashes and bugs",
+    "Excessive ads on free tier and ads in premium",
+    "Data loss after updates",
+    "Poor customer support",
+    "Battery drain and storage issues"
+  ],
+  "critical_issues": [
+    "Data loss after update (e.g., entire library deleted)",
+    "App crashes when opening playlists",
+    "Ads appearing in premium tier"
+  ],
+  "action_items": [
+    "Fix data loss bug: Investigate and patch the update process that causes library deletion. Example: user lost 500+ songs after update.",
+    "Resolve app crashes: Address crashes when opening playlists. Example: user reinstalled three times but still crashes.",
+    "Remove ads from premium: Ensure no ads are shown to paying subscribers. Example: user reported ads for Spotify products while on premium plan."
+  ],
+  "executive_summary": "Our app is facing critical stability and trust issues. Users are experiencing data loss, frequent crashes, and ads in the premium tier, leading to frustration and declining satisfaction. While music selection and interface are praised, these negative experiences are overshadowing the positives. Immediate action is needed to fix data loss bugs, improve app stability, and uphold the premium ad-free promise to retain users."
+}

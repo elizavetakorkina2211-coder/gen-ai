@@ -1,0 +1,1232 @@
+[
+  {
+    "review_id": "1",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.0,
+        "evidence": "The app crashes every time I try to open a playlist.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": 1.0,
+        "evidence": "Customer support took 5 days to respond and just told me to reinstall. Completely useless.",
+        "mentioned": true
+      },
+      {
+        "aspect": "цена",
+        "score": 2.0,
+        "evidence": "Premium subscriber for 3 years and this is what I get.",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 1.0,
+        "evidence": "The app crashes every time I try to open a playlist. I've reinstalled three times and nothing helps.",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "2",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 5.0,
+        "evidence": "works perfectly on my iPhone 15",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": 5.0,
+        "evidence": "The UI is clean and intuitive",
+        "mentioned": true
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "3",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.5,
+        "evidence": "The app also drains battery like crazy.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": 1.0,
+        "evidence": "Ads every 30 seconds on free tier is absolutely unbearable.",
+        "mentioned": true
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "4",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 2.5,
+        "evidence": "the app is slow to load sometimes",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": 2.0,
+        "evidence": "Price increase last year was disappointing",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 2.0,
+        "evidence": "The shuffle algorithm seems broken - keeps playing the same 20 songs",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "5",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 3.5,
+        "evidence": "Minor bug where the queue resets sometimes but not a dealbreaker.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 4.0,
+        "evidence": "Generally great app. Offline downloads work well for my commute.",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "6",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "дизайн",
+        "score": 1.0,
+        "evidence": "Also the new home screen is confusing and cluttered. Bring back the old design!",
+        "mentioned": true
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "7",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": 4.0,
+        "evidence": "Totally worth the premium price.",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "8",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.0,
+        "evidence": "App uses 800MB of storage even after clearing cache. That's insane.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 1.0,
+        "evidence": "Also syncing between devices is unreliable - my phone shows different queue than desktop. Fix your sync!",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "9",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 3.0,
+        "evidence": "the app sometimes doesn't resume after a phone call",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 3.0,
+        "evidence": "the app sometimes doesn't resume after a phone call",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "10",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": 2.0,
+        "evidence": "the price went up again and the family plan is getting expensive",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "11",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.0,
+        "evidence": "Logged me out of all devices randomly. Lost all my playlists that weren't backed up.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": 1.0,
+        "evidence": "This is unacceptable for a paid service.",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 1.0,
+        "evidence": "Data loss is inexcusable.",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "12",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 5.0,
+        "evidence": "responsive",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": 5.0,
+        "evidence": "Interface is beautiful",
+        "mentioned": true
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 5.0,
+        "evidence": "Perfect app, no issues",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "13",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.5,
+        "evidence": "The latest update broke dark mode - it keeps switching back to light mode randomly. Also the equalizer settings reset after every session.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 1.5,
+        "evidence": "The latest update broke dark mode - it keeps switching back to light mode randomly. Also the equalizer settings reset after every session.",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "14",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 4.0,
+        "evidence": "The search functionality is fast and accurate. ... occasional buffering on slower connections.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 3.5,
+        "evidence": "occasional buffering on slower connections",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "15",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": 1.0,
+        "evidence": "paying $11/month is insulting",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": 1.0,
+        "evidence": "They added ads inside the premium tier now! Getting ads for Spotify products",
+        "mentioned": true
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "16",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "17",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 2.0,
+        "evidence": "Memory usage keeps increasing with each update.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": 2.0,
+        "evidence": "Customer support is slow to respond.",
+        "mentioned": true
+      },
+      {
+        "aspect": "цена",
+        "score": 2.0,
+        "evidence": "premium doesn't feel worth it anymore",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "18",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.5,
+        "evidence": "Constant buffering issues even on WiFi. Bugs everywhere in the latest version.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": 2.0,
+        "evidence": "I pay for premium and expect reliable playback.",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 1.0,
+        "evidence": "The app also randomly shuffles even when shuffle is turned off. Bugs everywhere in the latest version.",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "19",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "дизайн",
+        "score": 5.0,
+        "evidence": "great UX",
+        "mentioned": true
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "20",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 4.0,
+        "evidence": "works great 95% of the time",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 4.0,
+        "evidence": "works great 95% of the time",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "21",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.0,
+        "evidence": "App deleted my entire library when I updated. 500+ songs gone.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": 1.0,
+        "evidence": "No response from support in 48 hours.",
+        "mentioned": true
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 1.0,
+        "evidence": "App deleted my entire library when I updated. 500+ songs gone. This is data loss and it's completely unacceptable.",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "22",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "дизайн",
+        "score": 2.0,
+        "evidence": "The new UI update makes it harder to find your music.",
+        "mentioned": true
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "23",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 5.0,
+        "evidence": "The app is stable and fast.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": 5.0,
+        "evidence": "Worth every penny of the subscription.",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "24",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.5,
+        "evidence": "Terrible battery drain since the last update. My phone loses 20% more battery per day with Spotify running in background.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 1.5,
+        "evidence": "Also the widget on iOS stopped working.",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "25",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 3.0,
+        "evidence": "the app sometimes doesn't stop playing when headphones disconnect",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 3.0,
+        "evidence": "the app sometimes doesn't stop playing when headphones disconnect",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "26",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.5,
+        "evidence": "Crashes, bugs",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": 1.5,
+        "evidence": "poor support",
+        "mentioned": true
+      },
+      {
+        "aspect": "цена",
+        "score": 2.0,
+        "evidence": "Price is now €11.99 and the app quality keeps getting worse",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 1.5,
+        "evidence": "Crashes, bugs",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "27",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  },
+  {
+    "review_id": "28",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 3.0,
+        "evidence": "Works most of the time.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 3.0,
+        "evidence": "Works most of the time.",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "29",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": 1.0,
+        "evidence": "Every time I open the app it asks me to log in again.",
+        "mentioned": true
+      },
+      {
+        "aspect": "дизайн",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "поддержка",
+        "score": 1.0,
+        "evidence": "Support suggested reinstalling (again). Not helpful.",
+        "mentioned": true
+      },
+      {
+        "aspect": "цена",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": 1.0,
+        "evidence": "Login issues for two weeks. Every time I open the app it asks me to log in again.",
+        "mentioned": true
+      }
+    ]
+  },
+  {
+    "review_id": "30",
+    "aspects": [
+      {
+        "aspect": "производительность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "дизайн",
+        "score": 4.0,
+        "evidence": "The new home feed is actually pretty good once you get used to it.",
+        "mentioned": true
+      },
+      {
+        "aspect": "поддержка",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "цена",
+        "score": 5.0,
+        "evidence": "The 30-day free trial for new users is generous.",
+        "mentioned": true
+      },
+      {
+        "aspect": "реклама",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      },
+      {
+        "aspect": "надёжность",
+        "score": null,
+        "evidence": null,
+        "mentioned": false
+      }
+    ]
+  }
+]
