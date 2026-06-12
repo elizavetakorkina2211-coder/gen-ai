@@ -46,19 +46,38 @@ GROUP_SIZE = 5
 
 
 def reduce_group(group: list[ChunkSummary]) -> GroupSummary:
-    """Уровень 2: 5-10 мини-резюме → одно групповое резюме.
-
-    Подсказка: похоже на reduce_summaries из раунда 3, но
-    response_model=GroupSummary (более лёгкая, чем DiscussionSummary).
-    """
-    # TODO
-    raise NotImplementedError
+    joined = "\n\n".join(
+        f"## {s.speaker} ({s.sentiment})\n" + "\n".join(f"- {p}" for p in s.key_points)
+        for s in group
+    )
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=GroupSummary,
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": GROUP_REDUCE_SYSTEM},
+            {"role": "user", "content": joined},
+        ],
+    )
 
 
 def reduce_final(groups: list[GroupSummary]) -> DiscussionSummary:
-    """Уровень 3: все групповые резюме → финальный DiscussionSummary."""
-    # TODO
-    raise NotImplementedError
+    joined = "\n\n".join(
+        f"## группа {i + 1} (sentiment={g.overall_sentiment}, "
+        f"speakers={', '.join(g.speakers)})\n" + "\n".join(f"- {t}" for t in g.themes)
+        for i, g in enumerate(groups)
+    )
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=DiscussionSummary,
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": REDUCE_SYSTEM},
+            {"role": "user", "content": joined},
+        ],
+    )
 
 
 def hierarchical_summary(
@@ -70,7 +89,6 @@ def hierarchical_summary(
     summaries = [summarize_chunk(c) for c in chunks]
     print(f"  [HMR] L1 готов ({time.time() - t0:.1f}с)")
 
-    # Уровень 2: бьём на группы и сворачиваем
     groups_chunks = [
         summaries[i : i + group_size] for i in range(0, len(summaries), group_size)
     ]
@@ -79,7 +97,6 @@ def hierarchical_summary(
     groups = [reduce_group(g) for g in groups_chunks]
     print(f"  [HMR] L2 готов ({time.time() - t1:.1f}с)")
 
-    # Уровень 3: финальный REDUCE
     print(f"  [HMR] L3 REDUCE: {len(groups)} групповых резюме...")
     t2 = time.time()
     final = reduce_final(groups)
@@ -98,11 +115,9 @@ def main() -> None:
         print(f"  • {kf}")
 
     Path("summary_hierarchical.json").write_text(
-        summary.model_dump_json(indent=2),
-        encoding="utf-8",
+        summary.model_dump_json(indent=2), encoding="utf-8"
     )
     print("\nСохранено: summary_hierarchical.json")
-    print("Сравни с summary.json (раунд 3): иерархия сглаживает детали.")
 
 
 if __name__ == "__main__":

@@ -32,6 +32,8 @@ import json
 from pathlib import Path
 
 from llm_client import get_model, make_client
+from prompts import CONCERN_CHECK
+from schema import MatchVerdict
 
 client = make_client()
 MODEL = get_model()
@@ -56,7 +58,15 @@ def fidelity(participants: list[dict], transcript: str) -> float:
     # TODO: пробежаться по всем concerns у всех participants;
     #       взять первые 30 символов quote, lowercase;
     #       проверить, есть ли в transcript.lower().
-    raise NotImplementedError
+    t = transcript.lower()
+    total, ok = 0, 0
+    for p in participants:
+        for c in p.get("concerns", []):
+            total += 1
+            probe = c["quote"].strip().lower()[:30]
+            if probe and probe in t:
+                ok += 1
+    return ok / total if total else 0.0
 
 
 def precision(participants: list[dict], transcript: str) -> float:
@@ -67,8 +77,7 @@ def precision(participants: list[dict], transcript: str) -> float:
     Для базовой версии — можно считать точность == достоверности.
     Для продвинутой — добавь свой критерий.
     """
-    # TODO
-    raise NotImplementedError
+    return fidelity(participants, transcript)
 
 
 def coverage(baseline: dict, participants: list[dict]) -> float:
@@ -78,8 +87,33 @@ def coverage(baseline: dict, participants: list[dict]) -> float:
     спрашиваем: «есть ли среди этих {llm_topics} тема, эквивалентная
     «{baseline_topic}»?». Ответ — да/нет.
     """
-    # TODO
-    raise NotImplementedError
+    llm_topics = []
+    for p_idx, p in enumerate(participants):
+        for c in p.get("concerns", []):
+            llm_topics.append(f"[{c['category']}] {c['quote'][:120]}")
+        if not llm_topics:
+            return 0.0
+        found = 0
+        for idx, topic in enumerate(baseline.get("topics", [])):
+            print(f"Participant № {p_idx}: {p}")
+            print(f"Topic № {idx}: {topic}")
+            verdict = client.chat.completions.create(
+                model=MODEL,
+                response_model=MatchVerdict,
+                max_retries=3,
+                temperature=0.0,
+                messages=[
+                    {"role": "system", "content": CONCERN_CHECK},
+                    {
+                        "role": "user",
+                        "content": f"Тема из эталона: '{topic['topic']}'. Жалобы модели: "
+                        + "\n".join(f"{i}. {t}" for i, t in enumerate(llm_topics)),
+                    },
+                ],
+            )
+            if verdict.matched:
+                found += 1
+    return found / len(baseline["topics"])
 
 
 def main() -> None:

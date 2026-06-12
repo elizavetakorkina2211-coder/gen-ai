@@ -29,15 +29,25 @@ import numpy as np
 import seaborn as sns
 from llm_client import get_model, make_client
 from prompts import ASPECTS_SYSTEM  # дополни prompts.py
-from schema import ParticipantSentiment  # дополни schema.py
+from schema import AspectSentiment, ParticipantSentiment  # дополни schema.py
 
 client = make_client()
 MODEL = get_model()
+ALL_ASPECTS = ["price", "speed", "ux", "support", "feature"]
 
 
 def extract_aspects(transcript: str) -> list[ParticipantSentiment]:
     # TODO: один запрос, response_model=list[ParticipantSentiment], max_retries=3
-    raise NotImplementedError
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=list[ParticipantSentiment],
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": ASPECTS_SYSTEM},
+            {"role": "user", "content": transcript},
+        ],
+    )
 
 
 def check_quotes(
@@ -49,8 +59,14 @@ def check_quotes(
     Не пытайся искать дословно: модель может слегка переформулировать.
     Бери первые 30 символов цитаты в lowercase и ищи подстроку.
     """
-    # TODO
-    raise NotImplementedError
+    t = transcript.lower()
+    ghosts: list[tuple[str, str]] = []
+    for p in aspects:
+        for a in p.aspects:
+            probe = a.quote.strip().lower()[:30]
+            if probe and probe not in t:
+                ghosts.append((p.name, a.quote))
+    return ghosts
 
 
 def build_heatmap(
@@ -58,8 +74,28 @@ def build_heatmap(
     out_path: str = "heatmap.png",
 ) -> None:
     """Матрица participant × aspect, sentiment → {+1, 0, -1}, NaN если не упомянут."""
-    # TODO: построить numpy-матрицу + seaborn.heatmap (cmap="RdYlGn", center=0).
-    raise NotImplementedError
+    names = [p.name for p in aspects]
+    sent_to_num = {"positive": 1, "negative": -1, "neutral": 0}
+    matrix = np.full((len(names), len(ALL_ASPECTS)), np.nan)
+    for i, p in enumerate(aspects):
+        for a in p.aspects:
+            if a.aspect in ALL_ASPECTS:
+                j = ALL_ASPECTS.index(a.aspect)
+                matrix[i, j] = sent_to_num[a.sentiment]
+    plt.figure(figsize=(8, 4))
+    sns.heatmap(
+        matrix,
+        annot=True,
+        fmt=".0f",
+        xticklabels=ALL_ASPECTS,
+        yticklabels=names,
+        center=0,
+        cbar_kws={"label": "sentiment"},
+    )
+    plt.title("Аспектная тональность по участникам")
+    plt.tight_layout()
+    plt.savefig(out_path, dpi=200)
+    plt.close()
 
 
 def main() -> None:

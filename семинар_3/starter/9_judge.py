@@ -39,7 +39,6 @@ MODEL = get_model()
 
 
 def load_artifacts() -> tuple[list[dict], dict]:
-    """participants.json (раунд 1) + summary.json (раунд 3)."""
     p = Path("participants.json")
     s = Path("summary.json")
     if not p.exists():
@@ -53,21 +52,30 @@ def load_artifacts() -> tuple[list[dict], dict]:
 
 
 def build_evidence_packet(participants: list[dict], summary: dict) -> str:
-    """Сложить артефакты в один текстовый блок для судьи.
-
-    Идея: дать судье «факты» (participants — жалобы и цитаты) и
-    «гипотезы» (summary — то, что мы из них вывели). Пусть проверит,
-    что вторые опираются на первые.
-    """
-    # TODO: собрать текстовый блок с разделами:
-    #   ## Рекомендации (которые оцениваем)
-    #   ## Жалобы участников (исходные данные)
-    raise NotImplementedError
+    parts = ["## Рекомендации (которые оцениваем)"]
+    for i, a in enumerate(summary.get("action_items", []), 1):
+        parts.append(f"  {i}. {a}")
+    parts.append("\n## Жалобы участников (исходные данные)")
+    for p in participants:
+        for c in p.get("concerns", []):
+            parts.append(
+                f"  - [{p['name']}/{c['category']}, sev={c['severity']}] «{c['quote']}»"
+            )
+    return "\n".join(parts)
 
 
 def judge(participants: list[dict], summary: dict) -> JudgeReport:
-    # TODO: один вызов с response_model=JudgeReport.
-    raise NotImplementedError
+    evidence = build_evidence_packet(participants, summary)
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=JudgeReport,
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": JUDGE_SYSTEM},
+            {"role": "user", "content": evidence},
+        ],
+    )
 
 
 def main() -> None:
@@ -82,12 +90,11 @@ def main() -> None:
             v.support
         ]
         print(f"\n  {mark} [{v.support}] {v.action}")
-        if v.evidence:
-            for e in v.evidence:
-                print(f"      ← «{e[:100]}»")
+        for e in v.evidence:
+            print(f"      ← «{e[:100]}»")
         print(f"      → {v.comment}")
 
-    print(f"\n━━━ Сводка ━━━")
+    print("\n━━━ Сводка ━━━")
     print(f"  supported:        {counts['supported']}")
     print(f"  weakly_supported: {counts['weakly_supported']}")
     print(f"  not_supported:    {counts['not_supported']}")
@@ -95,8 +102,7 @@ def main() -> None:
     print(f"\n  {report.summary}")
 
     Path("judge_report.json").write_text(
-        report.model_dump_json(indent=2),
-        encoding="utf-8",
+        report.model_dump_json(indent=2), encoding="utf-8"
     )
     print("\nСохранено: judge_report.json")
 

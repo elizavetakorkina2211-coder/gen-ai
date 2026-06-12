@@ -35,19 +35,33 @@ MODEL = get_model()
 
 
 def summarize_chunk(chunk: str) -> ChunkSummary:
-    """MAP: один фрагмент → ChunkSummary."""
-    # TODO
-    raise NotImplementedError
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=ChunkSummary,
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": CHUNK_SYSTEM},
+            {"role": "user", "content": chunk},
+        ],
+    )
 
 
 def reduce_summaries(summaries: list[ChunkSummary]) -> DiscussionSummary:
-    """REDUCE: список мини-резюме → один общий свод.
-
-    Склей summaries в строку (по одному блоку на фрагмент), отправь
-    одним сообщением с response_model=DiscussionSummary.
-    """
-    # TODO
-    raise NotImplementedError
+    joined = "\n\n".join(
+        f"## {s.speaker} ({s.sentiment})\n" + "\n".join(f"- {p}" for p in s.key_points)
+        for s in summaries
+    )
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=DiscussionSummary,
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": REDUCE_SYSTEM},
+            {"role": "user", "content": joined},
+        ],
+    )
 
 
 def summarize_discussion(transcript: str, workers: int = 6) -> DiscussionSummary:
@@ -55,7 +69,6 @@ def summarize_discussion(transcript: str, workers: int = 6) -> DiscussionSummary
     n = len(chunks)
     print(f"  [MR] MAP: {n} фрагментов, до {workers} параллельно...")
     t0 = time.time()
-
     summaries: list[ChunkSummary | None] = [None] * n
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = {pool.submit(summarize_chunk, c): i for i, c in enumerate(chunks)}
@@ -65,9 +78,7 @@ def summarize_discussion(transcript: str, workers: int = 6) -> DiscussionSummary
             summaries[i] = fut.result()
             done += 1
             print(f"  [MR] {done}/{n} готов ({time.time() - t0:.1f}с)")
-
-    t_map = time.time() - t0
-    print(f"  [MR] MAP {t_map:.1f}с → REDUCE...")
+    print(f"  [MR] MAP {time.time() - t0:.1f}с → REDUCE...")
     result = reduce_summaries([s for s in summaries if s is not None])
     print(f"  [MR] всего {time.time() - t0:.1f}с")
     return result
@@ -86,10 +97,7 @@ def main() -> None:
     for ai in summary.action_items:
         print(f"  → {ai}")
 
-    Path("summary.json").write_text(
-        summary.model_dump_json(indent=2),
-        encoding="utf-8",
-    )
+    Path("summary.json").write_text(summary.model_dump_json(indent=2), encoding="utf-8")
     print("\nСохранено: summary.json")
 
 

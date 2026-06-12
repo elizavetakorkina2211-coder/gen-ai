@@ -35,6 +35,7 @@ from llm_client import get_model, make_client
 from prompts import ASPECTS_SYSTEM, DISCOVER_SYSTEM
 from schema import (
     DiscoveredAspects,  # стадия A — что обнаружили
+    DynamicParticipant,
     ParticipantSentiment,  # стадия B — переиспользуем из раунда 2
 )
 
@@ -45,7 +46,16 @@ MODEL = get_model()
 def discover_aspects(transcript: str) -> DiscoveredAspects:
     """Стадия A: что вообще обсуждали в этом транскрипте?"""
     # TODO: один вызов модели, response_model=DiscoveredAspects.
-    raise NotImplementedError
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=DiscoveredAspects,
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": DISCOVER_SYSTEM},
+            {"role": "user", "content": transcript},
+        ],
+    )
 
 
 def extract_with_discovered(
@@ -58,8 +68,22 @@ def extract_with_discovered(
         "Используй СТРОГО эти аспекты:\n- price (...)\n- speed (...)"
     и положи в system-промпт перед запросом.
     """
-    # TODO
-    raise NotImplementedError
+    dynamic_aspects_block = "\n".join(
+        f"- {a.name}: {a.description}" for a in discovered.aspects
+    )
+    sys_prompt = ASPECTS_SYSTEM + (
+        "\n\nИспользуй СТРОГО эти аспекты:\n" + dynamic_aspects_block
+    )
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=list[DynamicParticipant],
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": sys_prompt},
+            {"role": "user", "content": transcript},
+        ],
+    )
 
 
 def main() -> None:

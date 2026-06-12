@@ -35,8 +35,17 @@ def extract_participants(transcript: str) -> list[Participant]:
       • max_retries=3 — на случай, если первый ответ невалиден по схеме
       • temperature=0.0 для извлечения фактов (а не для генерации)
     """
-    # TODO
-    raise NotImplementedError
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=list[Participant],
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": IE_SYSTEM},
+            {"role": "user", "content": transcript},
+        ],
+    )
+    # raise NotImplementedError
 
 
 def main() -> None:

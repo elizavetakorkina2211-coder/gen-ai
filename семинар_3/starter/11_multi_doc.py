@@ -9,7 +9,6 @@
   • Как сгруппировать жалобы, чтобы не было «зоопарка тем»?
 
 Задача:
-
   1. В transcripts/ уже лежат 5 готовых транскриптов разных банков.
   2. Прогнать extract_aspects + summarize_discussion параллельно на
      всех 5 транскриптах. Сохранить артефакты по каждому документу.
@@ -29,7 +28,6 @@
 from __future__ import annotations
 
 import importlib
-import json
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -52,52 +50,63 @@ def list_transcripts(folder: str = "transcripts") -> list[Path]:
     paths = sorted(Path(folder).glob("*.txt"))
     if not paths:
         raise SystemExit(
-            f"В {folder}/ нет .txt файлов. Должны лежать готовые "
-            f"транскрипты; если их нет — сгенерируй generate_transcripts.py."
+            f"В {folder}/ нет .txt — обычно они уже лежат. "
+            f"Если нет — сгенерируй: python generate_transcripts.py 5"
         )
     return paths
 
 
 def process_one(path: Path) -> dict:
-    """Один транскрипт → {bank, aspects, summary}."""
     transcript = path.read_text(encoding="utf-8")
-    bank = path.stem  # имя файла без расширения = идентификатор банка
-    # TODO: вызвать extract_aspects + summarize_discussion;
-    #       вернуть словарь.
-    raise NotImplementedError
+    return {
+        "bank": path.stem,
+        "aspects": extract_aspects(transcript),
+        "summary": summarize_discussion(transcript),
+    }
 
 
 def aggregate_aspects(docs: list[dict]) -> pd.DataFrame:
-    """Собрать все оценки из всех транскриптов в одну широкую таблицу.
-
-    Колонки: bank, name, aspect, sentiment, confidence, quote.
-    """
-    # TODO
-    raise NotImplementedError
+    rows = []
+    for d in docs:
+        for p in d["aspects"]:
+            for a in p.aspects:
+                rows.append(
+                    {
+                        "bank": d["bank"],
+                        "name": p.name,
+                        "aspect": a.aspect,
+                        "sentiment": a.sentiment,
+                        "confidence": a.confidence,
+                        "quote": a.quote,
+                    }
+                )
+    return pd.DataFrame(rows)
 
 
 def top_topics(df: pd.DataFrame, n: int = 10) -> pd.Series:
-    """Топ-N аспектов по частоте появления (counts)."""
-    # TODO: df['aspect'].value_counts().head(n)
-    raise NotImplementedError
+    return df["aspect"].value_counts().head(n)
 
 
 def cross_bank_table(df: pd.DataFrame) -> pd.DataFrame:
-    """Сводная таблица: строки — банки, столбцы — аспекты, значения — счётчик."""
-    # TODO: pd.crosstab(df['bank'], df['aspect'])
-    raise NotImplementedError
+    return pd.crosstab(df["bank"], df["aspect"])
 
 
-def consolidate(
-    summaries: list[DiscussionSummary], banks: list[str]
-) -> MultiDocSummary:
-    """Свести N мини-сводок в общую. Вызов модели с response_model=MultiDocSummary.
-
-    В промпте указать: «выдели общие паттерны (что встречается у всех)
-    и уникальные точки боли каждого банка».
-    """
-    # TODO
-    raise NotImplementedError
+def consolidate(summaries: list[DiscussionSummary], banks: list[str]) -> MultiDocSummary:
+    joined = "\n\n".join(
+        f"## {bank}\n**Заголовок:** {s.headline}\n"
+        + "\n".join(f"- {kf}" for kf in s.key_findings)
+        for bank, s in zip(banks, summaries)
+    )
+    return client.chat.completions.create(
+        model=MODEL,
+        response_model=MultiDocSummary,
+        max_retries=3,
+        temperature=0.0,
+        messages=[
+            {"role": "system", "content": MULTI_DOC_SYSTEM},
+            {"role": "user", "content": joined},
+        ],
+    )
 
 
 def main() -> None:
@@ -116,28 +125,24 @@ def main() -> None:
     print(f"\n━━━ Сводная таблица: {len(df)} строк ━━━")
     print(df.head())
 
-    print(f"\n━━━ Топ-{10} тем по всем банкам ━━━")
+    print("\n━━━ Топ-10 тем ━━━")
     print(top_topics(df))
 
     print("\n━━━ Сводка по банкам ━━━")
     print(cross_bank_table(df))
 
     print("\n━━━ Многодокументная консолидация (через модель) ━━━")
-    multi = consolidate(
-        [d["summary"] for d in docs],
-        [d["bank"] for d in docs],
-    )
-    print(f"\n  Общие паттерны:")
+    multi = consolidate([d["summary"] for d in docs], [d["bank"] for d in docs])
+    print("\n  Общие паттерны:")
     for t in multi.common_themes:
         print(f"    • {t}")
-    print(f"\n  Уникальные точки боли по банкам:")
+    print("\n  Уникальные точки боли по банкам:")
     for bank, pains in multi.unique_per_bank.items():
         print(f"    [{bank}] {', '.join(pains)}")
 
     df.to_csv("multi_doc.csv", index=False, encoding="utf-8")
     Path("multi_doc_summary.json").write_text(
-        multi.model_dump_json(indent=2),
-        encoding="utf-8",
+        multi.model_dump_json(indent=2), encoding="utf-8"
     )
     print("\nСохранено: multi_doc.csv, multi_doc_summary.json")
 
