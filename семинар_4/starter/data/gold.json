@@ -1,72 +1,104 @@
 [
   {
     "id": 1,
-    "question": "Кто жаловался на push-уведомления?",
     "type": "прямой",
-    "gold_sources": ["olymp_anna", "tinkoff_alex", "tinkoff_lyuba"],
-    "note": "слово «пуш» / «push» в явном виде"
+    "question": "Что такое проклятие размерности и почему точный поиск ломается в высоких размерностях?",
+    "gold_sources": ["vector_search_ivf_hnsw"]
   },
   {
     "id": 2,
-    "question": "Кто ругался на скорость приложения?",
-    "type": "синоним",
-    "gold_sources": ["olymp_sergey", "tinkoff_alex", "tinkoff_lyuba"],
-    "note": "слова «лагает», «тормозит», «крутится долго» — синонимы «скорости»"
+    "type": "прямой",
+    "question": "Чем алгоритм IVF отличается от HNSW в векторном поиске?",
+    "gold_sources": ["vector_search_ivf_hnsw"]
   },
   {
     "id": 3,
-    "question": "Кто упомянул тариф «Корпоратив»?",
-    "type": "точный артикул",
-    "gold_sources": ["tinkoff_alex", "tinkoff_pavel", "tinkoff_timur"],
-    "note": "dense теряет, BM25 находит"
+    "type": "прямой",
+    "question": "Из каких десяти блоков собирается хороший промпт?",
+    "gold_sources": ["prompt_engineering_blocks"]
   },
   {
     "id": 4,
-    "question": "Кто жаловался одновременно и на цену, и на скорость?",
-    "type": "multi-hop",
-    "gold_sources": ["brightword_dmitry"],
-    "note": "Дмитрий: 1800 за урок дорого + видеокомната подвисает. Одно-проход RAG не соберёт оба сигнала от одного участника."
+    "type": "прямой",
+    "question": "Какие флаги Docker используют, чтобы ограничить песочницу для кода от LLM?",
+    "gold_sources": ["llm_sandbox_security"]
   },
   {
     "id": 5,
-    "question": "Кто упомянул ФЗ-152?",
-    "type": "точный артикул",
-    "gold_sources": ["tinkoff_maria"],
-    "note": "юридический термин, dense может размыть"
+    "type": "прямой",
+    "question": "Сколько изображений нужно для обучения стилевой LoRA и почему нельзя описывать стиль в подписях?",
+    "gold_sources": ["lora_finetuning_flux"]
   },
   {
     "id": 6,
-    "question": "Кто был недоволен интерфейсом?",
-    "type": "синоним",
-    "gold_sources": ["olymp_olga", "brightword_viktor", "brightword_alina"],
-    "note": "Ольга: «меняется без предупреждения», Виктор: «я бы убрал из интерфейса всё», Алина: «дизайн карточек устарел»"
+    "type": "прямой",
+    "question": "В каком году вышла статья Attention Is All You Need и что она изменила?",
+    "gold_sources": ["llm_history"]
   },
   {
     "id": 7,
-    "question": "Кто хвалил поддержку?",
-    "type": "позитив",
-    "gold_sources": ["tinkoff_kirill", "tinkoff_pavel", "brightword_polina"],
-    "note": "Кирилл: «поддержка — отдельный ромб», Павел: «решили за полчаса», Полина: «отвечает в течение часа»"
+    "type": "синоним",
+    "question": "Как нейросеть превращает слова в наборы чисел и откуда у этих чисел берётся смысл?",
+    "gold_sources": ["embeddings_grokking"]
   },
   {
     "id": 8,
-    "question": "У кого были технические проблемы с оплатой или переводом?",
-    "type": "перефраз",
-    "gold_sources": ["olymp_igor", "olymp_maksim", "brightword_polina"],
-    "note": "Игорь: деньги зависли на двое суток, Максим: крах в метро, Полина: двойное списание"
+    "type": "синоним",
+    "question": "Чем опасны спрятанные указания внутри присланного резюме для корпоративного ИИ-помощника?",
+    "gold_sources": ["prompt_injection_security"]
   },
   {
     "id": 9,
-    "question": "Кто одновременно пользуется Т-Банком и «Олимпом»?",
-    "type": "multi-hop cross-collection",
-    "gold_sources": ["olymp_darya", "tinkoff_alex", "tinkoff_lyuba"],
-    "note": "требует связать упоминания обоих банков в одном транскрипте"
+    "type": "перефраз",
+    "question": "Почему перебор всех соседей перестаёт работать, когда у векторов очень много координат?",
+    "gold_sources": ["vector_search_ivf_hnsw"]
   },
   {
     "id": 10,
-    "question": "Кто упомянул СБП?",
+    "type": "перефраз",
+    "question": "Как автоматически подобрать лучшую конфигурацию retrieval-системы вокруг модели?",
+    "gold_sources": ["harness_rag_optimization"]
+  },
+  {
+    "id": 11,
+    "type": "multi-hop",
+    "question": "Где впервые появились векторные представления слов и как такие векторы устроены геометрически?",
+    "gold_sources": ["llm_history", "embeddings_grokking"]
+  },
+  {
+    "id": 12,
+    "type": "multi-hop",
+    "question": "Как безопасно запускать код, сгенерированный агентом, и почему любой такой код считают недоверенным?",
+    "gold_sources": ["llm_sandbox_security", "prompt_injection_security"]
+  },
+  {
+    "id": 13,
     "type": "точный артикул",
-    "gold_sources": ["olymp_anna", "olymp_maksim", "tinkoff_kirill"],
-    "note": "аббревиатура, BM25 находит мгновенно"
+    "question": "Чем метод ADC отличается от SDC при вычислении расстояния в product quantization?",
+    "gold_sources": ["vector_search_ivf_hnsw"]
+  },
+  {
+    "id": 14,
+    "type": "точный артикул",
+    "question": "Какой флаг Docker защищает контейнер от форк-бомб?",
+    "gold_sources": ["llm_sandbox_security"]
+  },
+  {
+    "id": 15,
+    "type": "точный артикул",
+    "question": "Какую строку в конфиге ai-toolkit добавляют, чтобы превратить стилевую LoRA в LoRA для редактирования?",
+    "gold_sources": ["lora_finetuning_flux"]
+  },
+  {
+    "id": 16,
+    "type": "точный артикул",
+    "question": "Что такое эффект confused deputy в атаке на ИИ-агента?",
+    "gold_sources": ["prompt_injection_security"]
+  },
+  {
+    "id": 17,
+    "type": "точный артикул",
+    "question": "Почему при дообучении модели сложению по модулю взято именно число 53?",
+    "gold_sources": ["embeddings_grokking"]
   }
 ]
