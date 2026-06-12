@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "type": "прямой",
+    "question": "Что такое проклятие размерности и почему точный поиск ломается в высоких размерностях?",
+    "gold_sources": ["vector_search_ivf_hnsw"]
+  },
+  {
+    "id": 2,
+    "type": "прямой",
+    "question": "Чем алгоритм IVF отличается от HNSW в векторном поиске?",
+    "gold_sources": ["vector_search_ivf_hnsw"]
+  },
+  {
+    "id": 3,
+    "type": "прямой",
+    "question": "Из каких десяти блоков собирается хороший промпт?",
+    "gold_sources": ["prompt_engineering_blocks"]
+  },
+  {
+    "id": 4,
+    "type": "прямой",
+    "question": "Какие флаги Docker используют, чтобы ограничить песочницу для кода от LLM?",
+    "gold_sources": ["llm_sandbox_security"]
+  },
+  {
+    "id": 5,
+    "type": "прямой",
+    "question": "Сколько изображений нужно для обучения стилевой LoRA и почему нельзя описывать стиль в подписях?",
+    "gold_sources": ["lora_finetuning_flux"]
+  },
+  {
+    "id": 6,
+    "type": "прямой",
+    "question": "В каком году вышла статья Attention Is All You Need и что она изменила?",
+    "gold_sources": ["llm_history"]
+  },
+  {
+    "id": 7,
+    "type": "синоним",
+    "question": "Как нейросеть превращает слова в наборы чисел и откуда у этих чисел берётся смысл?",
+    "gold_sources": ["embeddings_grokking"]
+  },
+  {
+    "id": 8,
+    "type": "синоним",
+    "question": "Чем опасны спрятанные указания внутри присланного резюме для корпоративного ИИ-помощника?",
+    "gold_sources": ["prompt_injection_security"]
+  },
+  {
+    "id": 9,
+    "type": "перефраз",
+    "question": "Почему перебор всех соседей перестаёт работать, когда у векторов очень много координат?",
+    "gold_sources": ["vector_search_ivf_hnsw"]
+  },
+  {
+    "id": 10,
+    "type": "перефраз",
+    "question": "Как автоматически подобрать лучшую конфигурацию retrieval-системы вокруг модели?",
+    "gold_sources": ["harness_rag_optimization"]
+  },
+  {
+    "id": 11,
+    "type": "multi-hop",
+    "question": "Где впервые появились векторные представления слов и как такие векторы устроены геометрически?",
+    "gold_sources": ["llm_history", "embeddings_grokking"]
+  },
+  {
+    "id": 12,
+    "type": "multi-hop",
+    "question": "Как безопасно запускать код, сгенерированный агентом, и почему любой такой код считают недоверенным?",
+    "gold_sources": ["llm_sandbox_security", "prompt_injection_security"]
+  },
+  {
+    "id": 13,
+    "type": "точный артикул",
+    "question": "Чем метод ADC отличается от SDC при вычислении расстояния в product quantization?",
+    "gold_sources": ["vector_search_ivf_hnsw"]
+  },
+  {
+    "id": 14,
+    "type": "точный артикул",
+    "question": "Какой флаг Docker защищает контейнер от форк-бомб?",
+    "gold_sources": ["llm_sandbox_security"]
+  },
+  {
+    "id": 15,
+    "type": "точный артикул",
+    "question": "Какую строку в конфиге ai-toolkit добавляют, чтобы превратить стилевую LoRA в LoRA для редактирования?",
+    "gold_sources": ["lora_finetuning_flux"]
+  },
+  {
+    "id": 16,
+    "type": "точный артикул",
+    "question": "Что такое эффект confused deputy в атаке на ИИ-агента?",
+    "gold_sources": ["prompt_injection_security"]
+  },
+  {
+    "id": 17,
+    "type": "точный артикул",
+    "question": "Почему при дообучении модели сложению по модулю взято именно число 53?",
+    "gold_sources": ["embeddings_grokking"]
+  }
+]
