@@ -1,0 +1,22 @@
+{
+  "n_scored": 60,
+  "exact_match": 0.333,
+  "within_1": 0.717,
+  "mae_by_question": {
+    "eqwlth": 1.533,
+    "helppoor": 0.867,
+    "helpnot": 1.067,
+    "getahead": 0.867
+  },
+  "distribution_gap_by_question": {
+    "eqwlth": 0.6,
+    "helppoor": 0.067,
+    "helpnot": 0.4,
+    "getahead": 0.333
+  },
+  "scale_errors_caught": 0,
+  "hallucinated_reasoning": 0,
+  "incoherent_answers": 0,
+  "ambiguous_flags": 0,
+  "total_items": 60
+}
